@@ -1,0 +1,11 @@
+{ 
+  "trackType": "bad-analysis",
+  "name": "Bad Analysis form - Default Form",
+  "targetScore": 100,
+  "channelOfBad": [],
+  "reasonForBad": [],
+  "issueForBad": [],
+  "organizationOfBad": [], 
+  "actived": true,
+  "isDefaultForm":true
+}

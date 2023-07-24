@@ -1,0 +1,47 @@
+**/.env
+**/node_modules/
+
+**/.DS_Store
+**/node_modules
+**/dist/
+**/coverage/
+
+**/tests/e2e/reports/
+**/selenium-debug.log
+**/chromedriver.log
+
+# local env files
+**/.env.local
+**/.env.*.local
+**/.env
+# Log files
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+pnpm-lock.yaml
+
+# Editor directories and files
+**/.idea
+**/.vscode
+**/*.suo
+**/*.ntvs*
+**/*.njsproj
+**/*.sln
+**/*.sw*
+
+# Key files
+**/*.cert
+**.cert
+**/*.pem
+**.pem
+**/test.js
+# new config 
+**.env
+.env.**
+**-config.json
+
+**.config.yml
+
+temps/
+
+.scannerwork

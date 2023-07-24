@@ -1,0 +1,13 @@
+[
+  {
+   "title": "Overview",
+   "onBreaksStatus": 10,
+   "consultStatus": 5,
+   "meetingStatus": 15,
+   "technicalIssueStatus": 3,
+   "healthIssuesStatus": 2,
+   "availableStatus": 9,
+   "redStatus": true,
+   "redOnStatus": 10
+  }
+]

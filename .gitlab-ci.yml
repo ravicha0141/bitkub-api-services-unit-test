@@ -1,0 +1,53 @@
+stages:
+  - test
+  - build
+  # - publish
+  # - clean
+  # - deploy
+
+# stop_remove_container:
+#   stage: clean
+#   allow_failure: true
+#   only:
+#     - develop
+#   script:
+#     - docker stop $CONTAINER_NAME
+#     - docker rm $CONTAINER_NAME
+
+build:
+  stage: build
+  image: docker:stable
+  tags:
+    - docker
+  services:
+    - docker:dind
+  before_script:
+    - docker --version
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+  script:
+    - docker build -t $IMAGE_NAME -t $REGISTRY_IMAGE .
+    - docker push $REGISTRY_IMAGE
+  only:
+    - develop
+# deploy:
+#   image: alpine:latest
+#   stage: deploy
+#   only:
+#     - develop
+#   script:
+#     - cp $ENV_SET .env.production
+#     - cp $DOCDB_KEYFILE rds-combined-ca-bundle.pem
+#     - cp $SSO_CERT_PATH sso-authen.cert
+#     - cp $ACCESS_PRIVATE access-private.pem
+#     - cp $ACCESS_PUBLIC access-public.pem
+#     - cp $REFRESH_PRIVATE refresh-private.pem
+#     - cp $REFRESH_PUBLIC refresh-public.pem
+#     - docker run --env-file .env.production
+#       --label com.datadoghq.ad.logs="[{"source":"orange-aws","service":"bitqast-dev"}]"
+#       -v $PWD/rds-combined-ca-bundle.pem:/usr/src/app/configurations/keys/rds-combined-ca-bundle.pem
+#       -v $PWD/sso-authen.cert:/usr/src/app/configurations/keys/sso-authen.cert
+#       -v $PWD/access-private.pem:/usr/src/app/configurations/keys/access-private.pem
+#       -v $PWD/access-public.pem:/usr/src/app/configurations/keys/access-public.pem
+#       -v $PWD/refresh-private.pem:/usr/src/app/configurations/keys/refresh-private.pem
+#       -v $PWD/refresh-public.pem:/usr/src/app/configurations/keys/refresh-public.pem
+#       -p $EXPOSE_PORT:3000 -d --name $CONTAINER_NAME $IMAGE_NAME

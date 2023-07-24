@@ -1,0 +1,130 @@
+[
+  {
+    "name": "settingMemu.agentProductivityAllowed",
+    "key": "menuAgentProductivityAllowed"
+  },
+  {
+    "name": "settingMemu.dailyTaskAllowed",
+    "key": "menuDailyTaskAllowed"
+  },
+  {
+    "name": "settingMemu.disputeFunctionAllowed",
+    "key": "menuDisputeFunctionAllowed"
+  },
+  {
+    "name": "settingMemu.assignmentAllowed",
+    "key": "menuAssignmentAllowed"
+  },
+  {
+    "name": "settingReport.agentAndteamPerformanceReportAllowed",
+    "key": "reportAgentAndteamPerformance"
+  },
+  {
+    "name": "settingReport.complianceAndNonComplianceTeamAnalysisAllowed",
+    "key": "reportComplianceAndNonComplianceTeamAnalysis"
+  },
+  {
+    "name": "settingMemu.settingAllowed",
+    "key": "menuSettingAllowed"
+  },
+  {
+    "name": "settingReport.disputeCollectingReportAllowed",
+    "key": "reportDisputeCollectingReport"
+  },
+  {
+    "name": "settingMemu.templateAndCustimizeAllowed",
+    "key": "menuTemplateAndCustimizeAllowed"
+  },
+  {
+    "name": "settingReport.feedbackAllowed",
+    "key": "reportFeedback"
+  },
+  {
+    "name": "settingReport.badAnalysisAllowed",
+    "key": "reportBadAnalysis"
+  },
+  {
+    "name": "settingExport.complianceAndNonComplianceTeamAnalysis.pdfAllowed",
+    "key": "exportPdfComplianceAndNonComplianceTeamAnalysis"
+  },
+  {
+    "name": "settingExport.complianceAndNonComplianceTeamAnalysis.excelAllowed",
+    "key": "exportExcelComplianceAndNonComplianceTeamAnalysis"
+  },
+  {
+    "name": "settingMemu.reportAllowed",
+    "key": "menuReportAllowed"
+  },
+  {
+    "name": "settingExport.disputeCollectingReport.excelAllowed",
+    "key": "exportExcelDisputeCollectingReport"
+  },
+  {
+    "name": "settingExport.feedback.excelAllowed",
+    "key": "exportExcelFeedback"
+  },
+  {
+    "name": "settingExport.feedback.pdfAllowed",
+    "key": "exportPdfFeedback"
+  },
+  {
+    "name": "settingExport.badAnalysis.pdfAllowed",
+    "key": "exportPdfBadAnalysis"
+  },
+  {
+    "name": "settingExport.badAnalysis.excelAllowed",
+    "key": "exportExcelBadAnalysis"
+  },
+  {
+    "name": "settingReport.varianceReportAllowed",
+    "key": "reportVarianceReport"
+  },
+  {
+    "name": "settingExport.agentAndteamPerformanceReport.pdfAllowed",
+    "key": "exportPdfAgentAndteamPerformanceReport"
+  },
+  {
+    "name": "settingExport.disputeCollectingReport.pdfAllowed",
+    "key": "exportPdfDisputeCollectingReport"
+  },
+  {
+    "name": "settingExport.agentAndteamPerformanceReport.excelAllowed",
+    "key": "exportExcelAgentAndteamPerformanceReport"
+  },
+  {
+    "name": "settingMemu.varianceAllowed",
+    "key": "menuVarianceAllowed"
+  },
+  {
+    "name": "settingReport.qaAgentAndTeamPerformanceByTeamAllowed",
+    "key": "reportQaAgentAndTeamPerformanceByTeam"
+  },
+  {
+    "name": "settingReport.qaAgentAndTeamPerformanceByAgentAllowed",
+    "key": "reportQaAgentAndTeamPerformanceByAgent"
+  },
+  {
+    "name": "settingExport.qaAgentAndTeamPerformanceByTeam.pdfAllowed",
+    "key": "exportPdfQaAgentAndTeamPerformanceByTeam"
+  },
+  {
+    "name": "settingExport.qaAgentAndTeamPerformanceByAgent.pdfAllowed",
+    "key": "exportPdfQaAgentAndTeamPerformanceByAgent"
+  },
+  {
+    "name": "settingExport.qaAgentAndTeamPerformanceByTeam.excelAllowed",
+    "key": "exportExcelQaAgentAndTeamPerformanceByTeam"
+  },
+  {
+    "name": "settingExport.qaAgentAndTeamPerformanceByAgent.excelAllowed",
+    "key": "exportExcelQaAgentAndTeamPerformanceByAgent"
+  },
+  {
+    "name": "settingExport.varianceReport.pdfAllowed",
+    "key": "exportPdfVarianceReport"
+  },
+  {
+    "name": "settingExport.varianceReport.excelAllowed",
+    "key": "exportExcelVarianceReport"
+  }
+]

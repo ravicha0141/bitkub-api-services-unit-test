@@ -1,0 +1,23 @@
+version: '3'
+services:
+  server:
+    build: ./
+    image: bik/bitqast-api-service:uat
+    container_name: bitqast-api-service_uat
+    working_dir: /usr/src/app
+    labels:
+      com.datadoghq.ad.logs: '[{"source": "orange-aws", "service": "bitqast-uat"}]'
+    restart: always
+    environment:
+      NODE_ENV: production
+    env_file:
+      - ./.env.uat
+    ports:
+      - 3001:3000
+    networks:
+      - bitqast-net
+
+networks:
+  bitqast-net:
+    external:
+      name: bitqast-net-prod
