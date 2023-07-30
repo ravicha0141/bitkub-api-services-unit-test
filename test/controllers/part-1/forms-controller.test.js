@@ -5,7 +5,7 @@ const path = require('path');
 const __dir = require('app-root-path');
 
 const repositoriesDb = require(path.resolve(`${__dir}/src/databases/repositories`));
-const formsController = require('../../src/controllers/forms.controller.js');
+const formsController = require(path.resolve(`${__dir}/src/controllers/forms.controller.js`));
 const CriteriaQaCsRepository = new repositoriesDb.criteriaQaCsRepository();
 const CriteriaQaCsQuestionRepository = new repositoriesDb.criteriaQaCsQuestionRepository();
 const CriteriaQaCsItemQuestionRepository = new repositoriesDb.criteriaQaCsItemQuestionRepository();

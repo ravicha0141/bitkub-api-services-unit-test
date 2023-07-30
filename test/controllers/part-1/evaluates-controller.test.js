@@ -5,8 +5,8 @@ const path = require('path');
 const __dir = require('app-root-path');
 
 const repositoriesDb = require(path.resolve(`${__dir}/src/databases/repositories`));
-const evaluatesController = require('../../src/controllers/evaluates.controller.js');
-const { OnBreakTimeUseCase } = require('../../src/applications/evaluates/on-break-times.usecase.js');
+const evaluatesController = require(path.resolve(`${__dir}/src/controllers/evaluates.controller.js`));
+const { OnBreakTimeUseCase } = require(path.resolve(`${__dir}/src/applications/evaluates/on-break-times.usecase.js`));
 const UserRepository = new repositoriesDb.userRepository();
 const MemberRepository = new repositoriesDb.memberRepository();
 const AssignmentRepository = new repositoriesDb.assignmentRepository();
